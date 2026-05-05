@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Michael Ajao-Olarinoye — A celebration — 1 August 2026</title>
+<meta name="description" content="You are warmly invited to celebrate the conferral of the degree of Doctor of Philosophy upon Michael Ajao-Olarinoye, Saturday 1 August 2026.">
+
+<!-- Open Graph for WhatsApp/social previews -->
+<meta property="og:url" content="https://michaelphdcelebration.netlify.app/">
+<meta property="og:title" content="Dr. Michael Ajao-Olarinoye — A graduation celebration">
+<meta property="og:description" content="Saturday, 1 August 2026 — 35 madeira croft, CV5 8NX Coventry, UK">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://michaelphdcelebration.netlify.app/og-image-v2.png">
+<meta property="og:image:secure_url" content="https://michaelphdcelebration.netlify.app/og-image-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Graduation celebration card for Dr. Michael Ajao-Olarinoye, 1 August 2026, Coventry, UK">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dr. Michael Ajao-Olarinoye — A graduation celebration">
+<meta name="twitter:description" content="Saturday, 1 August 2026 — Coventry, UK">
+<meta name="twitter:image" content="https://michaelphdcelebration.netlify.app/og-image-v2.png">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --green-deep: #1a2e2a;
+    --green-mid: #234038;
+    --gold: #d4a968;
+    --gold-soft: #d4a96830;
+    --gold-faint: #d4a96815;
+    --cream: #f4ede0;
+    --cream-warm: #f6f0e4;
+    --ink: #1a2e2a;
+    --ink-soft: #1a2e2a99;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .display { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; letter-spacing: -0.005em; }
+
+  .eyebrow {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .container { max-width: 720px; margin: 0 auto; padding: 0 32px; }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: var(--green-deep);
+    color: var(--cream);
+    padding: 80px 32px 96px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before, .hero::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background: var(--gold-soft);
+    top: 32px;
+    bottom: 32px;
+  }
+  .hero::before { left: 32px; }
+  .hero::after { right: 32px; }
+
+  .hero-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .crest {
+    width: 168px;
+    height: 105px;
+    margin: 0 auto 36px;
+    display: block;
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.1s forwards;
+  }
+
+  .hero-eyebrow {
+    color: var(--gold);
+    margin-bottom: 28px;
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.3s forwards;
+  }
+
+  .hero-name {
+    font-size: clamp(46px, 6.6vw, 76px);
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 18px;
+    color: var(--cream);
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.5s forwards;
+  }
+
+  .hero-degree {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--gold);
+    margin-bottom: 56px;
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.7s forwards;
+  }
+
+  .ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 40px 0;
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.9s forwards;
+  }
+  .ornament .line { flex: 1; max-width: 80px; height: 1px; background: var(--gold-soft); }
+  .ornament .diamond {
+    width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg);
+  }
+
+  .hero-when-where {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 32px;
+    align-items: center;
+    margin: 32px 0 48px;
+    opacity: 0;
+    animation: fadeUp 1s ease-out 1.1s forwards;
+  }
+  .hero-when-where .col p:first-child { color: var(--gold); margin-bottom: 12px; }
+  .hero-when-where .col .display {
+    font-size: 24px;
+    line-height: 1.3;
+    color: var(--cream);
+  }
+  .hero-when-where .col .sub {
+    font-size: 14px;
+    color: var(--gold);
+    opacity: 0.8;
+    margin-top: 6px;
+  }
+  .hero-when-where .divider { width: 1px; height: 64px; background: var(--gold-soft); }
+
+  .hero-cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--green-deep);
+    padding: 16px 44px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    opacity: 0;
+    animation: fadeUp 1s ease-out 1.3s forwards;
+  }
+  .hero-cta:hover { background: var(--cream); transform: translateY(-2px); }
+
+  .hero-deadline {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--gold);
+    margin-top: 18px;
+    opacity: 0;
+    animation: fadeUp 1s ease-out 1.5s forwards;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== SECTIONS ===== */
+  section.chapter {
+    padding: 96px 0;
+    position: relative;
+  }
+
+  .chapter-eyebrow {
+    color: var(--green-mid);
+    text-align: center;
+    margin-bottom: 14px;
+    opacity: 0.7;
+  }
+
+  .chapter-title {
+    font-size: clamp(36px, 6vw, 52px);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--green-deep);
+    line-height: 1.15;
+  }
+
+  .chapter-italic {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    color: var(--ink-soft);
+    margin-bottom: 48px;
+  }
+
+  .ornament-dark .line { background: #1a2e2a25; }
+  .ornament-dark .diamond { background: var(--green-deep); }
+
+  /* ===== JOURNEY ===== */
+  .journey-prose {
+    max-width: 580px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.85;
+  }
+  .journey-prose p { margin-bottom: 1.4em; }
+  .journey-prose p:first-child::first-letter {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 72px;
+    float: left;
+    line-height: 0.85;
+    margin: 6px 12px 0 0;
+    color: var(--green-deep);
+    font-weight: 500;
+  }
+  .journey-prose em { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 21px; }
+
+  .pull-quote {
+    max-width: 540px;
+    margin: 56px auto 0;
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--gold-soft);
+    border-bottom: 1px solid var(--gold-soft);
+  }
+  .pull-quote p {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.45;
+    color: var(--green-deep);
+  }
+  .pull-quote cite {
+    display: block;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 16px;
+  }
+
+  /* ===== SCHEDULE ===== */
+  .schedule-section { background: var(--cream-warm); }
+
+  .schedule {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .schedule-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--gold-soft);
+    align-items: baseline;
+  }
+  .schedule-row:last-child { border-bottom: none; }
+  .schedule-time {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--green-deep);
+    text-align: right;
+  }
+  .schedule-event h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--green-deep);
+    margin-bottom: 4px;
+  }
+  .schedule-event p {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* ===== PRACTICAL ===== */
+  .practical-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .practical-card {
+    background: var(--cream-warm);
+    border: 1px solid var(--gold-soft);
+    padding: 32px 28px;
+    border-radius: 2px;
+    position: relative;
+  }
+  .practical-card::before {
+    content: '';
+    position: absolute;
+    top: 12px; left: 12px; right: 12px; bottom: 12px;
+    border: 1px solid var(--gold-faint);
+    pointer-events: none;
+    border-radius: 1px;
+  }
+  .practical-card .icon {
+    width: 32px; height: 32px;
+    margin-bottom: 16px;
+    color: var(--gold);
+  }
+  .practical-card h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--green-deep);
+    margin-bottom: 10px;
+  }
+  .practical-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .practical-card a {
+    color: var(--green-mid);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 3px;
+  }
+
+  /* ===== RSVP ===== */
+  .rsvp-section {
+    background: var(--green-deep);
+    color: var(--cream);
+    text-align: center;
+  }
+  .rsvp-section .chapter-eyebrow { color: var(--gold); opacity: 1; }
+  .rsvp-section .chapter-title { color: var(--cream); }
+  .rsvp-section .chapter-italic { color: var(--gold); opacity: 0.85; }
+
+  .rsvp-prose {
+    max-width: 480px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f4ede0cc;
+  }
+
+  .rsvp-form {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: left;
+    background: #f4ede008;
+    border: 1px solid var(--gold-soft);
+    padding: 28px;
+    border-radius: 2px;
+  }
+
+  .rsvp-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--cream);
+    font-size: 16px;
+  }
+
+  .rsvp-form .form-field {
+    margin-bottom: 18px;
+  }
+
+  .rsvp-form input,
+  .rsvp-form select {
+    width: 100%;
+    padding: 13px 12px;
+    border: 1px solid var(--gold-soft);
+    background: #f4ede01a;
+    color: var(--cream);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 16px;
+  }
+
+  .rsvp-form select option {
+    color: var(--green-deep);
+    background: var(--cream);
+  }
+
+  .rsvp-form input::placeholder { color: #f4ede0a8; }
+
+  .choice-group {
+    display: grid;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .choice-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .choice-group input[type="radio"] {
+    width: auto;
+    accent-color: var(--gold);
+  }
+
+  .rsvp-submit {
+    width: 100%;
+    margin-top: 8px;
+    background: var(--gold);
+    color: var(--green-deep);
+    padding: 16px 20px;
+    border: 1px solid var(--gold);
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .rsvp-submit:hover {
+    background: var(--cream);
+    border-color: var(--cream);
+    transform: translateY(-2px);
+  }
+
+  .rsvp-deadline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--gold);
+    opacity: 0.85;
+  }
+
+  .privacy-note {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #f4ede0bf;
+  }
+
+  .gift-panel {
+    margin-top: 24px;
+    padding: 18px;
+    border: 1px solid var(--gold-soft);
+    background: #f4ede008;
+    text-align: left;
+  }
+
+  .gift-panel-standalone {
+    max-width: 620px;
+    margin: 28px auto 0;
+  }
+
+  .gift-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .gift-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .gift-panel p {
+    margin-bottom: 10px;
+    color: #f4ede0cc;
+    font-size: 16px;
+  }
+
+  .gift-panel a {
+    color: var(--gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .gift-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .copy-paypal-btn {
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--gold);
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 14px;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+
+  .copy-paypal-btn:hover {
+    background: var(--gold);
+    color: var(--green-deep);
+  }
+
+  .copy-status {
+    font-size: 14px;
+    color: #f4ede0d6;
+  }
+
+  .gift-qr {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 0;
+    border: 1px solid var(--gold-soft);
+    background: var(--cream);
+    padding: 8px;
+    flex-shrink: 0;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    padding: 56px 32px;
+    text-align: center;
+    background: var(--cream);
+  }
+  footer .ornament { margin-bottom: 24px; }
+  footer p {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 440px;
+    margin: 0 auto 8px;
+  }
+  footer .signature {
+    margin-top: 24px;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    font-style: normal;
+    font-family: 'Crimson Pro', Georgia, serif;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 600px) {
+    .hero { padding: 56px 24px 72px; }
+    .hero::before { left: 16px; } .hero::after { right: 16px; }
+    .hero-when-where {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .hero-when-where .divider { display: none; }
+    section.chapter { padding: 64px 0; }
+    .container { padding: 0 24px; }
+    .schedule-row {
+      grid-template-columns: 80px 1fr;
+      gap: 20px;
+    }
+    .schedule-time { font-size: 19px; }
+    .practical-grid { grid-template-columns: 1fr; gap: 20px; }
+    .journey-prose p:first-child::first-letter { font-size: 56px; }
+    .gift-layout {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .gift-qr {
+      margin-top: 6px;
+    }
+  }
+
+  /* Scroll-triggered reveals using IntersectionObserver */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- ============== HERO ============== -->
+<header class="hero">
+  <div class="hero-inner">
+
+    <img class="crest" src="./crest.svg" width="110" height="110" alt="Celebration crest with laurel leaves and graduation cap">
+
+    <p class="eyebrow hero-eyebrow">You are warmly invited</p>
+
+    <h1 class="display hero-name">Dr. Michael Ajao-Olarinoye</h1>
+    <p class="hero-degree">— Doctor of Philosophy, Computational Science —</p>
+
+    <div class="ornament">
+      <span class="line"></span>
+      <span class="diamond"></span>
+      <span class="line"></span>
+    </div>
+
+    <div class="hero-when-where">
+      <div class="col">
+        <p class="eyebrow">When</p>
+        <p class="display">Saturday<br>1 August 2026</p>
+        <p class="sub">2:00 pm onwards</p>
+      </div>
+      <div class="divider"></div>
+      <div class="col">
+        <p class="eyebrow">Where</p>
+        <p class="display">35 Madeira Croft<br>CV5 8NX Coventry, UK</p>
+        <p class="sub">Reception &amp; dinner</p>
+      </div>
+    </div>
+
+    <a href="#rsvp" class="hero-cta">RSVP</a>
+    <span class="hero-deadline">— please reply by 15 July 2026 —</span>
+
+  </div>
+</header>
+
+<!-- ============== JOURNEY ============== -->
+<section class="chapter reveal">
+  <div class="container">
+    <p class="eyebrow chapter-eyebrow">Our story</p>
+    <h2 class="display chapter-title">The road here</h2>
+    <p class="chapter-italic">a short version of a long story</p>
+
+    <div class="ornament ornament-dark">
+      <span class="line"></span>
+      <span class="diamond"></span>
+      <span class="line"></span>
+    </div>
+
+    <div class="journey-prose">
+      <p>My PhD journey has been a four-year road of growth, sacrifice, and perseverance. It was not easy &mdash; there were long nights, difficult moments, and seasons where the finish line felt far away &mdash; but it has been deeply worth it.</p>
+
+      <p>Along the way, I was carried by the support of family, friends, colleagues, mentors, and everyone who believed in me, encouraged me, and stood by me. Your prayers, calls, messages, patience, and practical help made more difference than words can fully express.</p>
+
+      <p>This celebration is my way of saying thank you. This achievement is not mine alone; it is ours.</p>
+    </div>
+
+    <div class="pull-quote">
+      <p>&ldquo;The work of the scholar is to think carefully and at length, and to remember those who carried him there.&rdquo;</p>
+      <cite>— A line worth borrowing</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SCHEDULE (HIDDEN) ============== -->
+<!-- <section class="chapter schedule-section reveal">
+  <div class="container">
+    <p class="eyebrow chapter-eyebrow">Chapter two</p>
+    <h2 class="display chapter-title">The day itself</h2>
+    <p class="chapter-italic">order of the afternoon</p>
+
+    <div class="ornament ornament-dark">
+      <span class="line"></span>
+      <span class="diamond"></span>
+      <span class="line"></span>
+    </div>
+
+    <div class="schedule">
+      <div class="schedule-row">
+        <div class="schedule-time">2:00</div>
+        <div class="schedule-event">
+          <h3>Arrival &amp; reception</h3>
+          <p>Drinks, canapés, and the chance to find your seat before things begin.</p>
+        </div>
+      </div>
+      <div class="schedule-row">
+        <div class="schedule-time">3:00</div>
+        <div class="schedule-event">
+          <h3>Toasts &amp; thanks</h3>
+          <p>A few words from family, supervisors, and the new doctor himself.</p>
+        </div>
+      </div>
+      <div class="schedule-row">
+        <div class="schedule-time">4:00</div>
+        <div class="schedule-event">
+          <h3>Dinner</h3>
+          <p>A sit-down meal with vegetarian, halal, and dietary options &mdash; please tell us in your RSVP.</p>
+        </div>
+      </div>
+      <div class="schedule-row">
+        <div class="schedule-time">6:00</div>
+        <div class="schedule-event">
+          <h3>Cake, coffee &amp; conversation</h3>
+          <p>The most important hour, traditionally.</p>
+        </div>
+      </div>
+      <div class="schedule-row">
+        <div class="schedule-time">7:30</div>
+        <div class="schedule-event">
+          <h3>Music &amp; dancing</h3>
+          <p>An informal evening session for those still standing.</p>
+        </div>
+      </div>
+      <div class="schedule-row">
+        <div class="schedule-time">10:00</div>
+        <div class="schedule-event">
+          <h3>Carriages</h3>
+          <p>Soft close. Taxis can be booked from reception.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ============== PRACTICAL (HIDDEN) ============== -->
+<!-- <section class="chapter reveal">
+  <div class="container">
+    <p class="eyebrow chapter-eyebrow">Chapter three</p>
+    <h2 class="display chapter-title">Practical things</h2>
+    <p class="chapter-italic">to make the day easy</p>
+
+    <div class="ornament ornament-dark">
+      <span class="line"></span>
+      <span class="diamond"></span>
+      <span class="line"></span>
+    </div>
+
+    <div class="practical-grid">
+
+      <div class="practical-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M12 2 L4 6 v6 c0 5 4 9 8 10 c4-1 8-5 8-10 V6 z"/>
+        </svg>
+        <h3>Dress code</h3>
+        <p>Smart, with a celebratory touch. Cultural attire warmly welcomed &mdash; agbada, isi-agu, lace, ankara, all at home here.</p>
+      </div>
+
+      <div class="practical-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M12 2 C8 2 5 5 5 9 c0 5 7 13 7 13 s7-8 7-13 c0-4-3-7-7-7 z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        <h3>Getting there</h3>
+        <p>Coventry is well-connected by train from London (1 hr) and Birmingham (20 min). Full venue address and parking info will be sent with your RSVP confirmation.</p>
+      </div>
+
+      <div class="practical-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <rect x="3" y="6" width="18" height="14" rx="1"/>
+          <path d="M3 10 h18"/>
+          <path d="M8 6 V4 M16 6 V4"/>
+        </svg>
+        <h3>Staying over</h3>
+        <p>For travelling guests we'll share a shortlist of nearby hotels (£70&ndash;£120/night) closer to the date. Family from abroad, please reach out and we'll help with logistics.</p>
+      </div>
+
+      <div class="practical-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M20 12 v7 a1 1 0 0 1-1 1 H5 a1 1 0 0 1-1-1 v-7"/>
+          <path d="M2 8 h20 v4 H2 z"/>
+          <path d="M12 8 v13"/>
+          <path d="M12 8 c-3-3-7 0-4 3 c2 2 4 0 4 0 z"/>
+          <path d="M12 8 c3-3 7 0 4 3 c-2 2-4 0-4 0 z"/>
+        </svg>
+        <h3>Gifts</h3>
+        <p>Your presence is the gift. If you'd like to bless us with a cash gift, you can use the PayPal link in the RSVP section. We'll include both a clickable link and a QR code for ease.</p>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+<!-- ============== RSVP ============== -->
+<section class="chapter rsvp-section reveal" id="rsvp">
+  <div class="container">
+    <p class="eyebrow chapter-eyebrow">RSVP</p>
+    <h2 class="display chapter-title">Will you be there?</h2>
+    <p class="chapter-italic">we hope so</p>
+
+    <div class="ornament">
+      <span class="line"></span>
+      <span class="diamond"></span>
+      <span class="line"></span>
+    </div>
+
+    <p class="rsvp-prose">Please complete this RSVP form so we can confirm attendance and plan the celebration properly.</p>
+
+    <form name="rsvp-michael-phd-celebration" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" class="rsvp-form" id="rsvp-form">
+      <input type="hidden" name="form-name" value="rsvp-michael-phd-celebration">
+      <input type="hidden" name="event" value="RSVP - Michael's PhD celebration">
+      <p hidden>
+        <label>Do not fill this out if you are human: <input name="bot-field"></label>
+      </p>
+
+      <div class="form-field">
+        <label for="full-name">Your full name *</label>
+        <input id="full-name" name="full-name" type="text" required placeholder="Your full name">
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email address *</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com">
+      </div>
+
+      <fieldset class="form-field" style="border:0;padding:0;margin:0 0 18px;">
+        <label style="margin-bottom:6px;">Will you be joining us? *</label>
+        <div class="choice-group">
+          <label for="joining-yes">
+            <input id="joining-yes" type="radio" name="will-you-join" value="Yes, count me in" required>
+            <span>Yes, count me in</span>
+          </label>
+          <label for="joining-no">
+            <input id="joining-no" type="radio" name="will-you-join" value="Sadly I can't make it" required>
+            <span>Sadly I can't make it</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="form-field" id="guest-count-field">
+        <label for="guest-count">How many people, including yourself? *</label>
+        <select id="guest-count" name="guest-count">
+          <option value="">Select one</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+
+      <button type="submit" class="rsvp-submit">Send RSVP</button>
+
+      <p class="privacy-note">Your details are used only for RSVP coordination.</p>
+    </form>
+
+    <div class="gift-panel gift-panel-standalone">
+      <div class="gift-layout">
+        <div class="gift-content">
+          <p>If you would like to give a cash gift, you can use PayPal—even if you are not able to join us.</p>
+          <div class="gift-actions">
+            <a id="paypal-link" href="https://paypal.me/ajaoolarinoyebiz" target="_blank" rel="noopener">Send via PayPal</a>
+            <button type="button" class="copy-paypal-btn" id="copy-paypal-btn">Copy link</button>
+            <span class="copy-status" id="copy-status" aria-live="polite"></span>
+          </div>
+        </div>
+        <img
+          class="gift-qr"
+          id="paypal-qr"
+          src="./qrcode.png"
+          alt="QR code for PayPal gift link">
+      </div>
+    </div>
+
+    <p class="rsvp-deadline">Please reply by 15 July 2026</p>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer>
+  <div class="ornament ornament-dark">
+    <span class="line"></span>
+    <span class="diamond"></span>
+    <span class="line"></span>
+  </div>
+  <p>With gratitude to everyone who walked some part of this road &mdash; especially my wife, Precious, and my parents, alongside family, friends, and colleagues.</p>
+  <p class="signature">— Michael &amp; Precious —</p>
+</footer>
+
+<script>
+  // Reveal sections on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // RSVP skip logic: only ask guest count if joining.
+  const joiningOptions = document.querySelectorAll('input[name="will-you-join"]');
+  const guestCountField = document.getElementById('guest-count-field');
+  const guestCountSelect = document.getElementById('guest-count');
+
+  function updateGuestCountVisibility() {
+    const selected = document.querySelector('input[name="will-you-join"]:checked');
+    const isJoining = selected && selected.value === 'Yes, count me in';
+    guestCountField.style.display = isJoining ? 'block' : 'none';
+    guestCountSelect.required = Boolean(isJoining);
+    if (!isJoining) guestCountSelect.value = '';
+  }
+
+  joiningOptions.forEach((option) => {
+    option.addEventListener('change', updateGuestCountVisibility);
+  });
+  updateGuestCountVisibility();
+
+  // Mobile-friendly copy action for PayPal gifting link.
+  const copyButton = document.getElementById('copy-paypal-btn');
+  const copyStatus = document.getElementById('copy-status');
+  const paypalLink = document.getElementById('paypal-link');
+
+  if (copyButton && copyStatus && paypalLink) {
+    copyButton.addEventListener('click', async () => {
+      const linkToCopy = paypalLink.href;
+      copyStatus.textContent = '';
+      try {
+        await navigator.clipboard.writeText(linkToCopy);
+        copyStatus.textContent = 'Link copied.';
+      } catch (error) {
+        copyStatus.textContent = 'Unable to copy automatically. Please copy manually.';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

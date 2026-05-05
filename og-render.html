@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #092f28;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 50% 46%, rgba(39, 82, 70, 0.4), transparent 42%),
+      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.035), transparent 30%),
+      linear-gradient(135deg, #052c25 0%, #0b342c 48%, #052c25 100%);
+  }
+
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      repeating-linear-gradient(30deg, rgba(255,255,255,0.018) 0 1px, transparent 1px 7px),
+      repeating-linear-gradient(110deg, rgba(0,0,0,0.02) 0 1px, transparent 1px 9px);
+    opacity: 0.3;
+  }
+
+  .frame {
+    position: absolute;
+    inset: 30px;
+    border: 2px solid #d4a968;
+    box-shadow: inset 0 0 0 4px rgba(5, 44, 37, 0.95), inset 0 0 0 6px rgba(212, 169, 104, 0.72);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .corner {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    color: #d4a968;
+    opacity: 0.9;
+    z-index: 3;
+  }
+  .corner svg { width: 100%; height: 100%; display: block; }
+  .corner.tl { top: 18px; left: 18px; }
+  .corner.tr { top: 18px; right: 18px; transform: scaleX(-1); }
+  .corner.bl { bottom: 18px; left: 18px; transform: scaleY(-1); }
+  .corner.br { bottom: 18px; right: 18px; transform: scale(-1, -1); }
+
+  .crest-wrap {
+    position: absolute;
+    left: 50%;
+    top: 92px;
+    transform: translateX(-50%);
+    width: 236px;
+    height: 148px;
+    z-index: 4;
+  }
+  .crest-wrap img { width: 100%; height: 100%; display: block; }
+
+  .divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #d4a968;
+    z-index: 4;
+  }
+  .divider.top { top: 242px; }
+  .divider.bottom { top: 456px; }
+  .divider svg { display: inline-block; }
+
+  h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 278px;
+    z-index: 4;
+    text-align: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 0.95;
+    letter-spacing: -0.4px;
+    color: #f4ede0;
+    padding: 0 72px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.22);
+  }
+
+  .sub {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 376px;
+    z-index: 4;
+    text-align: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+    color: #d4a968;
+    padding: 0 80px;
+  }
+
+  .loc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 502px;
+    z-index: 4;
+    text-align: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    color: #f4ede0;
+  }
+  .loc .dash {
+    color: #d4a968;
+    font-style: normal;
+    margin: 0 18px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="frame"></div>
+
+    <div class="corner tl"><svg viewBox="0 0 92 92" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 73 L12 12 L73 12"/><path d="M12 73 C35 70 48 58 51 39 C53 25 60 16 73 12"/><path d="M18 69 C30 66 36 58 36 47"/><path d="M45 25 C51 22 55 17 56 10"/><path d="M28 76 C39 68 44 58 45 47"/><path d="M76 28 C64 32 55 40 49 51"/><path d="M15 52 Q25 44 35 46 Q32 57 20 62 Z" fill="currentColor" stroke="none"/><path d="M31 32 Q42 26 51 32 Q43 42 31 42 Z" fill="currentColor" stroke="none"/><path d="M52 16 Q60 8 70 11 Q66 22 54 27 Z" fill="currentColor" stroke="none"/><circle cx="41" cy="50" r="2" fill="currentColor" stroke="none"/></svg></div>
+    <div class="corner tr"><svg viewBox="0 0 92 92" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 73 L12 12 L73 12"/><path d="M12 73 C35 70 48 58 51 39 C53 25 60 16 73 12"/><path d="M18 69 C30 66 36 58 36 47"/><path d="M45 25 C51 22 55 17 56 10"/><path d="M28 76 C39 68 44 58 45 47"/><path d="M76 28 C64 32 55 40 49 51"/><path d="M15 52 Q25 44 35 46 Q32 57 20 62 Z" fill="currentColor" stroke="none"/><path d="M31 32 Q42 26 51 32 Q43 42 31 42 Z" fill="currentColor" stroke="none"/><path d="M52 16 Q60 8 70 11 Q66 22 54 27 Z" fill="currentColor" stroke="none"/><circle cx="41" cy="50" r="2" fill="currentColor" stroke="none"/></svg></div>
+    <div class="corner bl"><svg viewBox="0 0 92 92" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 73 L12 12 L73 12"/><path d="M12 73 C35 70 48 58 51 39 C53 25 60 16 73 12"/><path d="M18 69 C30 66 36 58 36 47"/><path d="M45 25 C51 22 55 17 56 10"/><path d="M28 76 C39 68 44 58 45 47"/><path d="M76 28 C64 32 55 40 49 51"/><path d="M15 52 Q25 44 35 46 Q32 57 20 62 Z" fill="currentColor" stroke="none"/><path d="M31 32 Q42 26 51 32 Q43 42 31 42 Z" fill="currentColor" stroke="none"/><path d="M52 16 Q60 8 70 11 Q66 22 54 27 Z" fill="currentColor" stroke="none"/><circle cx="41" cy="50" r="2" fill="currentColor" stroke="none"/></svg></div>
+    <div class="corner br"><svg viewBox="0 0 92 92" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 73 L12 12 L73 12"/><path d="M12 73 C35 70 48 58 51 39 C53 25 60 16 73 12"/><path d="M18 69 C30 66 36 58 36 47"/><path d="M45 25 C51 22 55 17 56 10"/><path d="M28 76 C39 68 44 58 45 47"/><path d="M76 28 C64 32 55 40 49 51"/><path d="M15 52 Q25 44 35 46 Q32 57 20 62 Z" fill="currentColor" stroke="none"/><path d="M31 32 Q42 26 51 32 Q43 42 31 42 Z" fill="currentColor" stroke="none"/><path d="M52 16 Q60 8 70 11 Q66 22 54 27 Z" fill="currentColor" stroke="none"/><circle cx="41" cy="50" r="2" fill="currentColor" stroke="none"/></svg></div>
+
+    <div class="crest-wrap"><img src="crest.svg" alt="" width="210" height="132"></div>
+
+    <div class="divider top">
+      <svg width="375" height="24" viewBox="0 0 375 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M0 12 H145"/><path d="M230 12 H375"/><path d="M160 12 C170 3 177 3 187 12 C197 3 204 3 214 12"/><path d="M187 4 V22"/><path d="M177 17 C184 16 188 12 187 4"/><path d="M197 17 C190 16 186 12 187 4"/><circle cx="187" cy="12" r="2" fill="currentColor"/></svg>
+    </div>
+
+    <h1>Dr. Michael Ajao-Olarinoye</h1>
+    <p class="sub">PhD celebration · 1 August 2026</p>
+
+    <div class="divider bottom">
+      <svg width="410" height="24" viewBox="0 0 410 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M0 12 H145"/><path d="M265 12 H410"/><path d="M158 12 C172 2 184 3 195 12 C206 3 218 2 232 12"/><path d="M195 3 V23"/><path d="M181 18 C191 17 197 12 195 3"/><path d="M209 18 C199 17 193 12 195 3"/><circle cx="195" cy="12" r="2.2" fill="currentColor"/></svg>
+    </div>
+
+    <p class="loc"><span class="dash">&mdash;</span>Coventry, UK<span class="dash">&mdash;</span></p>
+  </div>
+</body>
+</html>

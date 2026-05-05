@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a2e2a"/>
+  <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#d4a968" stroke-width="1" opacity="0.35"/>
+  <g transform="translate(600, 188) scale(2.15) translate(-50, -50)" fill="none">
+    <circle cx="50" cy="50" r="28" stroke="#d4a968" stroke-width="1.2" opacity="0.7"/>
+    <g stroke="#d4a968" stroke-width="1.1" stroke-linecap="round">
+      <path d="M 33 24 Q 20 45 30 75"/>
+      <ellipse cx="24" cy="33" rx="2.7" ry="5.4" transform="rotate(-30 24 33)" fill="#d4a96866" stroke="none"/>
+      <ellipse cx="21.5" cy="42.5" rx="2.7" ry="5.4" transform="rotate(-18 21.5 42.5)" fill="#d4a96866" stroke="none"/>
+      <ellipse cx="21" cy="52" rx="2.7" ry="5.4" transform="rotate(-6 21 52)" fill="#d4a96866" stroke="none"/>
+      <ellipse cx="23" cy="61.5" rx="2.7" ry="5.4" transform="rotate(8 23 61.5)" fill="#d4a96866" stroke="none"/>
+      <ellipse cx="27" cy="70" rx="2.7" ry="5.4" transform="rotate(22 27 70)" fill="#d4a96866" stroke="none"/>
+    </g>
+    <g stroke="#d4a968" stroke-width="1.1" stroke-linecap="round">
+      <path d="M 67 24 Q 80 45 70 75"/>
+      <ellipse cx="76" cy="33" rx="2.7" ry="5.4" transform="rotate(30 76 33)" fill="#d4a96866" stroke="none"/>
+      <ellipse cx="78.5" cy="42.5" rx="2.7" ry="5.4" transform="rotate(18 78.5 42.5)" fill="#d4a96866" stroke="none"/>
+      <ellipse cx="79" cy="52" rx="2.7" ry="5.4" transform="rotate(6 79 52)" fill="#d4a96866" stroke="none"/>
+      <ellipse cx="77" cy="61.5" rx="2.7" ry="5.4" transform="rotate(-8 77 61.5)" fill="#d4a96866" stroke="none"/>
+      <ellipse cx="73" cy="70" rx="2.7" ry="5.4" transform="rotate(-22 73 70)" fill="#d4a96866" stroke="none"/>
+    </g>
+    <path d="M50 16 L52.6 21.4 L58.5 22.1 L54.2 26 L55.3 31.8 L50 28.8 L44.7 31.8 L45.8 26 L41.5 22.1 L47.4 21.4 Z" fill="#d4a968"/>
+    <text x="50" y="52" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="16" font-weight="600" fill="#d4a968" letter-spacing="1.4">MAO</text>
+    <text x="50" y="64" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="9.5" font-style="italic" fill="#d4a968" letter-spacing="1">MMXXVI</text>
+    <path d="M34 78 Q50 84 66 78" stroke="#d4a968" stroke-width="1.1"/>
+    <circle cx="50" cy="79.8" r="1.5" fill="#d4a968"/>
+  </g>
+  <text x="600" y="410" text-anchor="middle" fill="#f4ede0" font-family="Cormorant Garamond, Georgia, serif" font-size="38" font-weight="500">Dr. Michael Ajao-Olarinoye</text>
+  <text x="600" y="458" text-anchor="middle" fill="#d4a968" font-family="Cormorant Garamond, Georgia, serif" font-size="22" font-style="italic">PhD celebration · 1 August 2026 · Coventry, UK</text>
+  <text x="600" y="520" text-anchor="middle" fill="#d4a968" opacity="0.75" font-family="Georgia, serif" font-size="13" letter-spacing="0.28em">YOU ARE WARMLY INVITED</text>
+</svg>

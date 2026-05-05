@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="MAO">
+  <rect width="32" height="32" rx="4" fill="#1a2e2a"/>
+  <rect x="2" y="2" width="28" height="28" rx="3" fill="none" stroke="#d4a968" stroke-width="1"/>
+  <text x="16" y="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-weight="600" fill="#d4a968" letter-spacing="0.06em">MAO</text>
+</svg>

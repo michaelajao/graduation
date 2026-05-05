@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Michael PhD Celebration//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:michael-phd-celebration-20260801@michaelphdcelebration.netlify.app
+DTSTAMP:20260205T230000Z
+DTSTART:20260801T130000Z
+DTEND:20260801T210000Z
+SUMMARY:Dr. Michael Ajao-Olarinoye — PhD celebration
+LOCATION:35 Madeira Croft\, CV5 8NX\, Coventry\, UK
+DESCRIPTION:Celebration for Dr. Michael Ajao-Olarinoye.\nInvitation and RSVP: https://michaelphdcelebration.netlify.app/
+END:VEVENT
+END:VCALENDAR

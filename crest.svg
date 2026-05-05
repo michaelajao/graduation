@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" fill="none" role="img" aria-labelledby="crest-title">
+  <title id="crest-title">Graduation cap with laurel wreath</title>
+
+  <defs>
+    <symbol id="leaf" overflow="visible">
+      <path d="M0 0 Q 9 -5 20 0 Q 9 5 0 0 Z" fill="#d4a968"/>
+    </symbol>
+    <symbol id="leaf-small" overflow="visible">
+      <path d="M0 0 Q 7 -4 15 0 Q 7 4 0 0 Z" fill="#d4a968"/>
+    </symbol>
+  </defs>
+
+  <g stroke="#d4a968" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M119 128 C 86 126 56 112 39 90 C 26 72 25 48 42 24" stroke-width="2" fill="none"/>
+    <path d="M121 128 C 154 126 184 112 201 90 C 214 72 215 48 198 24" stroke-width="2" fill="none"/>
+    <path d="M120 128 L 96 144" stroke-width="2" fill="none"/>
+    <path d="M120 128 L 144 144" stroke-width="2" fill="none"/>
+  </g>
+
+  <g>
+    <use href="#leaf" transform="translate(103 128) rotate(202)"/>
+    <use href="#leaf" transform="translate(89 122) rotate(218)"/>
+    <use href="#leaf" transform="translate(75 113) rotate(234)"/>
+    <use href="#leaf" transform="translate(61 100) rotate(250)"/>
+    <use href="#leaf" transform="translate(50 84) rotate(266)"/>
+    <use href="#leaf" transform="translate(43 66) rotate(282)"/>
+    <use href="#leaf-small" transform="translate(40 47) rotate(296)"/>
+    <use href="#leaf-small" transform="translate(42 29) rotate(308)"/>
+
+    <use href="#leaf" transform="translate(98 120) rotate(20)"/>
+    <use href="#leaf" transform="translate(83 111) rotate(36)"/>
+    <use href="#leaf" transform="translate(69 98) rotate(52)"/>
+    <use href="#leaf" transform="translate(58 82) rotate(68)"/>
+    <use href="#leaf" transform="translate(51 64) rotate(84)"/>
+    <use href="#leaf-small" transform="translate(48 46) rotate(100)"/>
+
+    <use href="#leaf" transform="translate(137 128) rotate(-22)"/>
+    <use href="#leaf" transform="translate(151 122) rotate(-38)"/>
+    <use href="#leaf" transform="translate(165 113) rotate(-54)"/>
+    <use href="#leaf" transform="translate(179 100) rotate(-70)"/>
+    <use href="#leaf" transform="translate(190 84) rotate(-86)"/>
+    <use href="#leaf" transform="translate(197 66) rotate(-102)"/>
+    <use href="#leaf-small" transform="translate(200 47) rotate(-116)"/>
+    <use href="#leaf-small" transform="translate(198 29) rotate(-128)"/>
+
+    <use href="#leaf" transform="translate(142 120) rotate(160)"/>
+    <use href="#leaf" transform="translate(157 111) rotate(144)"/>
+    <use href="#leaf" transform="translate(171 98) rotate(128)"/>
+    <use href="#leaf" transform="translate(182 82) rotate(112)"/>
+    <use href="#leaf" transform="translate(189 64) rotate(96)"/>
+    <use href="#leaf-small" transform="translate(192 46) rotate(80)"/>
+  </g>
+
+  <g fill="#d4a968" transform="translate(120 55)">
+    <path d="M-18 8 L 0 16 L 18 8 L 16 23 C 16 27 8 30 0 30 C -8 30 -16 27 -16 23 Z"/>
+    <path d="M0 -11 L 39 4 L 0 19 L -39 4 Z"/>
+    <path d="M0 4 Q 18 8 30 11" stroke="#d4a968" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M30 11 L 30 30" stroke="#d4a968" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M26 30 L 34 30 L 32 40 L 28 40 Z"/>
+  </g>
+</svg>
