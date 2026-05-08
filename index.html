@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Michael Ajao-Olarinoye — A celebration — 1 August 2026</title>
-<meta name="description" content="You are warmly invited to celebrate the conferral of the degree of Doctor of Philosophy upon Michael Ajao-Olarinoye, Saturday 1 August 2026.">
+<title>Dr. Michael Ajao-Olarinoye — Thanksgiving celebration of his PhD graduation — 1 August 2026</title>
+<meta name="description" content="You are warmly invited to the thanksgiving celebration of Dr. Michael Ajao-Olarinoye's PhD graduation — Saturday, 1 August 2026, Coventry, UK.">
 
 <!-- Open Graph for WhatsApp/social previews -->
 <meta property="og:url" content="https://michaelphdcelebration.netlify.app/">
-<meta property="og:title" content="Dr. Michael Ajao-Olarinoye — A graduation celebration">
-<meta property="og:description" content="Saturday, 1 August 2026 — 35 madeira croft, CV5 8NX Coventry, UK">
+<meta property="og:title" content="Dr. Michael Ajao-Olarinoye — A thanksgiving celebration of his PhD graduation">
+<meta property="og:description" content="Saturday, 1 August 2026 — 35 Madeira Croft, CV5 8NX Coventry, UK">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://michaelphdcelebration.netlify.app/og-image-v2.png">
 <meta property="og:image:secure_url" content="https://michaelphdcelebration.netlify.app/og-image-v2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Graduation celebration card for Dr. Michael Ajao-Olarinoye, 1 August 2026, Coventry, UK">
+<meta property="og:image:alt" content="Thanksgiving celebration card for Dr. Michael Ajao-Olarinoye's PhD graduation, 1 August 2026, Coventry, UK">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dr. Michael Ajao-Olarinoye — A graduation celebration">
+<meta name="twitter:title" content="Dr. Michael Ajao-Olarinoye — A thanksgiving celebration of his PhD graduation">
 <meta name="twitter:description" content="Saturday, 1 August 2026 — Coventry, UK">
 <meta name="twitter:image" content="https://michaelphdcelebration.netlify.app/og-image-v2.png">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
@@ -104,19 +104,30 @@
 
   .hero-eyebrow {
     color: var(--gold);
-    margin-bottom: 28px;
+    margin-bottom: 18px;
     opacity: 0;
     animation: fadeUp 1s ease-out 0.3s forwards;
   }
 
-  .hero-name {
-    font-size: clamp(46px, 6.6vw, 76px);
-    font-weight: 500;
-    line-height: 1;
-    margin-bottom: 18px;
+  .hero-invite {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(18px, 2.2vw, 23px);
+    line-height: 1.4;
     color: var(--cream);
     opacity: 0;
-    animation: fadeUp 1s ease-out 0.5s forwards;
+    animation: fadeUp 1s ease-out 0.42s forwards;
+    margin-bottom: 22px;
+  }
+
+  .hero-name {
+    font-size: clamp(40px, 6.4vw, 72px);
+    font-weight: 500;
+    line-height: 1.05;
+    margin-bottom: 14px;
+    color: var(--cream);
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.55s forwards;
   }
 
   .hero-degree {
@@ -516,6 +527,25 @@
     flex-wrap: wrap;
   }
 
+  .send-paypal-btn {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    background: var(--gold);
+    color: var(--green-deep);
+    padding: 8px 14px;
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .send-paypal-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
   .copy-paypal-btn {
     border: 1px solid var(--gold);
     background: transparent;
@@ -577,6 +607,10 @@
   @media (max-width: 600px) {
     .hero { padding: 56px 24px 72px; }
     .hero::before { left: 16px; } .hero::after { right: 16px; }
+    .crest { width: 136px; height: 85px; margin-bottom: 28px; }
+    .hero-eyebrow { margin-bottom: 14px; }
+    .hero-invite { margin-bottom: 18px; }
+    .hero-degree { margin-bottom: 44px; }
     .hero-when-where {
       grid-template-columns: 1fr;
       gap: 24px;
@@ -611,9 +645,10 @@
 <header class="hero">
   <div class="hero-inner">
 
-    <img class="crest" src="./crest.svg" width="110" height="110" alt="Celebration crest with laurel leaves and graduation cap">
+    <img class="crest" src="./crest.svg" width="168" height="105" alt="Celebration crest with laurel leaves and graduation cap">
 
     <p class="eyebrow hero-eyebrow">You are warmly invited</p>
+    <p class="hero-invite">to the thanksgiving celebration of</p>
 
     <h1 class="display hero-name">Dr. Michael Ajao-Olarinoye</h1>
     <p class="hero-degree">— Doctor of Philosophy, Computational Science —</p>
@@ -857,7 +892,7 @@
         <div class="gift-content">
           <p>If you would like to give a cash gift, you can use PayPal—even if you are not able to join us.</p>
           <div class="gift-actions">
-            <a id="paypal-link" href="https://paypal.me/ajaoolarinoyebiz" target="_blank" rel="noopener">Send via PayPal</a>
+            <a id="paypal-link" class="send-paypal-btn" href="https://paypal.me/ajaoolarinoyebiz" target="_blank" rel="noopener">Send via PayPal</a>
             <button type="button" class="copy-paypal-btn" id="copy-paypal-btn">Copy link</button>
             <span class="copy-status" id="copy-status" aria-live="polite"></span>
           </div>

@@ -107,6 +107,25 @@
     flex-wrap: wrap;
   }
 
+  .send-paypal-btn {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    background: var(--gold);
+    color: var(--green-deep);
+    padding: 8px 14px;
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .send-paypal-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
   .copy-paypal-btn {
     border: 1px solid var(--gold);
     background: transparent;
@@ -201,7 +220,7 @@
       <div class="gift-layout">
         <div class="gift-content">
           <div class="gift-actions">
-            <a id="paypal-link" href="https://paypal.me/ajaoolarinoyebiz" target="_blank" rel="noopener">Send via PayPal</a>
+            <a id="paypal-link" class="send-paypal-btn" href="https://paypal.me/ajaoolarinoyebiz" target="_blank" rel="noopener">Send via PayPal</a>
             <button type="button" class="copy-paypal-btn" id="copy-paypal-btn">Copy link</button>
             <span class="copy-status" id="copy-status" aria-live="polite"></span>
           </div>
